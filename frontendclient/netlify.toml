@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "CHATAPP"
-  base = "/"
+  publish = "CHATAPP-main/build"
+  base = "CHATAPP-main"
 
 [[redirects]]
   from = "/*"
