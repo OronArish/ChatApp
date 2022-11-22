@@ -6,10 +6,11 @@ const { Server } = require("socket.io");
 app.use(cors());
 
 const server = http.createServer(app);
+var io = io('https://foxestalking.netlify.app', {resource: 'nodejs/socket.io'});
 
 const io = new Server(server, {
   cors: {
-    origin: "https://foxestalking.netlify.app/",
+    origin: "http://localhost:3001",
     methods: ["GET", "POST"],
   },
 });
